@@ -1,0 +1,163 @@
+#banner-home {
+    height: auto;
+    margin: 0px auto;
+    background-color: rgb(21, 21, 94);
+    background-image: linear-gradient(135deg, black 0%, rgb(15 80 136) 100%);
+}
+
+#banner-home img {
+    width: 100%;
+    opacity: 0.6;
+    height: 350px;
+}
+
+#banner-home h1 {
+    font-size: 20px;
+    width: 40px;
+    font-weight: 500;
+    position: absolute;
+    top: 250px;
+    right: 49%;
+    text-align: center;
+    color: #fff;
+}
+
+#banner-home p {
+    font-size: 14px;
+    margin-bottom: 40px;
+    width: 75%;
+    position: absolute;
+    top: 290px;
+    text-align: center;
+    right: 12%;
+    color: cornsilk;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-gap: 10px;
+    background-image: linear-gradient(rgb(124, 122, 122), rgba(219, 219, 224, 0.897), rgb(125, 125, 128));
+    padding: 10px;
+}
+
+.prod {
+    width: 100%;
+    height: 100%;
+    margin: 1px 3px;
+    padding: 2px;
+    text-align: center;
+    font-size: 1em;
+    text-decoration: none;
+    align-content: space-around;
+}
+
+.prod img {
+    width: 50%;
+    height: 60%;
+}
+
+.prod:hover:not(:active) {
+    background-image: radial-gradient(rgba(0, 0, 0), rgba(210, 210, 223, 0.897));
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.button,
+#button {
+    background-color: #810606da;
+    border: none;
+    color: white;
+    padding: 1px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+    position: relative;
+    bottom: 2%;
+    border-radius: 15px;
+}
+
+.button:hover,
+#button:hover {
+    color: brown;
+    background-color: #02010c
+}
+
+.button:active,
+#button:active {
+    background-color: #180181;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.login {
+    display: grid;
+}
+
+.login form {
+    margin: 10px 5px 5px;
+    padding: 10px 5px 5px;
+    text-align: justify;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    background-image: linear-gradient(rgb(124, 122, 122), rgba(219, 219, 224, 0.897), rgb(125, 125, 128));
+}
+
+h1,
+h2,
+h3,
+dt,
+dd,
+p,
+a,
+form {
+    text-align: center;
+    border-radius: 10px;
+    padding: 3px;
+    color: rgb(10, 10, 10);
+    text-shadow: 2px 2px 8px rgb(10, 10, 10);
+}
+
+@media screen and (max-width:600px) {
+    .banner {
+        width: 98%;
+        padding: 3px;
+        margin: 2px 1px;
+        padding: 1px;
+    }
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
+    .banner .banner-txt {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+    .img {
+        width: 100%;
+        height: auto;
+        margin: 0px;
+    }
+    .prod {
+        width: 100%;
+        margin: 2px;
+        padding: 2px;
+        flex-shrink: 1;
+    }
+    .img img,
+    .prod img {
+        width: 100%;
+        height: 60%;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .login form {
+        display: grid;
+    }
+}

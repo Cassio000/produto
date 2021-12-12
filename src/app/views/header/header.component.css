@@ -1,0 +1,25 @@
+.mat-toolbar-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(17, 14, 14, 0.897), rgb(2, 2, 97));
+    color: darkgray;
+}
+
+.menu-link a {
+    padding: 1px 3px;
+    margin: 2px 1px;
+    color: rgb(12, 61, 2);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1em;
+    text-shadow: 2px 2px 10px rgba(12, 116, 3, 0.534);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}

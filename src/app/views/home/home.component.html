@@ -1,0 +1,88 @@
+<div id="banner-home">
+    <img src="../assets/img/banner.jpg" alt="banner da home">
+    <div class="texto-home">
+        <h1>{{titulo}}</h1>
+        <p>{{texto}}</p>
+    </div>
+</div>
+<div class="color">
+    <h2>Destaques</h2>
+</div>
+
+<div class="grid">
+    <div class="prod col-6">
+        <img src="../assets/img/produtos/Console_Playstation_5_PS5_825GB_Sony-removebg-preview.png" alt="">
+        <p>Console Playstation</p>
+        <button mat-raised-button class="btn button" id="mudar" onclick="clicar()">Comprar</button>
+    </div>
+    <div class="prod col-6">
+        <img src="../assets/img/produtos/PC_Gamer_Completo_AMD_A6_3.8GHZ_Placa_de_vídeo_Radeon_R5_2GB_HD_500GB_8GB_Monitor_LED_HDMI_19.5_EasyPC-removebg-preview.png" alt="">
+        <p>PC Gamer Completo</p>
+        <button mat-raised-button class="btn button" id="alterar" onclick="mudar()">Comprar
+        </button>
+    </div>
+    <div class="prod col-6">
+        <img src="../assets/img/produtos/Console_Xbox_Series_X_-_Microsoft-removebg-preview.png" alt="">
+        <p>Console Xbox</p>
+        <button mat-raised-button class="btn button" id="indisponivel" onclick="aperte()">Comprar
+        </button>
+    </div>
+    <div class="prod col-6">
+        <img src="../assets/img/produtos/Console_Nintendo_Switch_32GB_-_Gray-removebg-preview.png" alt="">
+        <p>Console Nintendo</p>
+        <button mat-raised-button class="btn button" id="ap" onclick="ap()">Comprar
+        </button>
+    </div>
+
+</div>
+
+<div>
+    <h2>Novidades</h2>
+</div>
+<div class="grid">
+    <div class="prod">
+        <img src="../assets/img/produtos/flashback-classics-ps4-removebg-preview.png" alt="">
+        <p>flashback classics</p>
+        <button mat-raised-button class="btn button" id="d" onclick="d()">Comprar
+        </button>
+    </div>
+    <div class="prod">
+        <img src="../assets/img/produtos/Óculos_De_Realidade_Virtual_3_D_Para_Smartphone_-_Vr_Box_2.0-removebg-preview.png" alt="">
+        <p>Óculos De Realidade Virtual</p>
+        <button mat-raised-button class="btn button" id="c" onclick="c()">Comprar
+        </button>
+    </div>
+    <div class="prod">
+        <img src="../assets/img/produtos/rayman_origins-removebg-preview.png" alt="">
+        <p>Rayman origins</p>
+        <button mat-raised-button class="btn button" id="b" onclick="b()">Comprar
+        </button>
+    </div>
+    <div class="prod">
+        <img src="../assets/img/produtos/fallen_legion_revenants_vanguard_edition_switch_13799_1_42c85b26d019ce17a71c759b20680c09-removebg-preview.png" alt="">
+        <p>fallen legion revenants vanguard</p>
+        <button mat-raised-button class="btn button" id="a" onclick="a()">Comprar
+        </button>
+    </div>
+</div>
+
+<div class="login">
+    <form (ngSumit)="onSubmit(f)" #f="ngForm">
+        <div>
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" ngModel type="text">
+        </div>
+        <div>
+
+            <label for="email">E-mail:</label>
+            <input id="email" name="email" ngModel type="email">
+        </div>
+        <div>
+            <label for="senha">Senha</label>
+            <input id="senha" name="senha" type="password">
+        </div>
+        <div>
+            <button mat-raised-button type="submit">Salvar</button>
+        </div>
+    </form>
+</div>
